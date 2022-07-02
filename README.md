@@ -6,6 +6,7 @@ Suppose that we have a nice-looking result in a backtest. The issue here is that
 ### Proposed method
 1. Compute realized return at every timestamp based on a trading rule (called a primary model in AFML).
 2. Set an arbitrary max holding period.
-3. Extract the returns realized within the holding period and sum them up.
+3. Extract the returns realized within the holding period. 
+4. Regarding the case where returns are not realized within the period, we replace them with returns that are computed through a market exit order at the max holding period. 
 
 
