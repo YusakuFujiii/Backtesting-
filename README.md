@@ -10,3 +10,5 @@ Suppose that we have a nice-looking result in a backtest. The issue here is that
 4. Regarding the case where returns are not realized within the period, we replace them with returns that are computed through a market exit order at the max holding period. 
 
 
+### Discussion
+- For now, we prioritize not to exceed a max holding period (=the number of positions that we have at the same time). However, if the net pl of the positions is positive, we might want to see them go for a while. How can we implement the conditional execution? 
